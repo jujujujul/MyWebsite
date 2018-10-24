@@ -490,8 +490,12 @@ a:visited {
     z-index: 1;
 }
 .background-image {
-    height: 100%;
-    width: 100%;
+    width: 90%;
+    object-fit: cover;
+}
+
+.background-image-ex {
+    width: 80%;
     object-fit: cover;
 }
 .square-thumbs li {
