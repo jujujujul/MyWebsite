@@ -24,10 +24,11 @@ var shuffleme = (function( $ ) {
     }, 100);
 
     // instantiate the plugin
-    $grid.shuffle({
+    /*$grid.shuffle({
       itemSelector: '[class*="col-"]',
       sizer: $sizer    
     });
+    */
   },
 
       
@@ -49,7 +50,7 @@ var shuffleme = (function( $ ) {
       $this.toggleClass('active');
 
       // Filter elements
-      $grid.shuffle( 'shuffle', group );
+      //$grid.shuffle( 'shuffle', group );
     });
 
     $btns = null;
@@ -58,9 +59,11 @@ var shuffleme = (function( $ ) {
 
 
   listen = function() {
+      /*
     var debouncedLayout = $.throttle( 300, function() {
       $grid.shuffle('update');
     });
+    */
 
     // Get all images inside shuffle
     $grid.find('img').each(function() {
@@ -75,14 +78,14 @@ var shuffleme = (function( $ ) {
       proxyImage = new Image();
       $( proxyImage ).on('load', function() {
         $(this).off('load');
-        debouncedLayout();
+        //debouncedLayout();
       });
 
       proxyImage.src = this.src;
     });
 
     setTimeout(function() {
-      debouncedLayout();
+      //debouncedLayout();
     }, 500);
   };      
 
