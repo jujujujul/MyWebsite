@@ -4,7 +4,7 @@
 /*---------- Global Style ----------*/
 
 body {
-    color: #222;
+    color: gainsboro;
     font-family: 'Fauna One', serif;
     font-size: 17px;
     line-height: 1.8!important;
@@ -20,7 +20,7 @@ h5,
 h6 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 200;
-    color: #111;
+    color: grey;
     line-height: 1.5em;
     margin-top: 0;
 }
@@ -32,7 +32,7 @@ p {
 p,
 ul,
 li {
-    color: #666;
+    color: #cfd0d1
 }
 section {
     padding-top: 185px;
@@ -45,6 +45,11 @@ section {
 a,
 a:link {
     color: #666;
+}
+
+
+.font_color{
+    color: gainsboro;
 }
 a:hover,
 a:focus,
