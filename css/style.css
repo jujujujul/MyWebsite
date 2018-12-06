@@ -32,7 +32,8 @@ p {
 p,
 ul,
 li {
-    color: #cfd0d1
+    color: #cfd0d1;
+    font-size: 13px;
 }
 section {
     padding-top: 185px;
